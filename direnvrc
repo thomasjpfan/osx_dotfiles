@@ -1,4 +1,4 @@
 layout_micromamba() {
-  eval "$(micromamba shell hook --shell bash)"
+  eval "$(micromamba shell hook --shell zsh)"
   micromamba activate "$1"
 }

@@ -180,3 +180,4 @@ setopt noglob
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/thomasfan/.cache/lm-studio/bin"
 # End of LM Studio CLI section
+export PATH="/Users/thomasfan/.pixi/bin:$PATH"
