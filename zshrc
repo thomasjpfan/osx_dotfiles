@@ -139,12 +139,6 @@ export GPG_TTY=$(tty)
 
 function rg { command rg --json $@ | delta; }
 
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '$HOME/google-cloud-sdk/path.zsh.inc' ]; then . '$HOME/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '$HOME/google-cloud-sdk/completion.zsh.inc' ]; then . '$HOME/google-cloud-sdk/completion.zsh.inc'; fi
-
 HISTFILE="$HOME/.zsh_history"
 
 # Ignore these commands in history
@@ -174,10 +168,11 @@ alias ipy-install="python -m ipykernel install --user --name"
 alias wakeub="ssh mini -t 'bash -i -c "wake"'"
 alias lg="lazygit"
 
-setopt noglob
 
 
 # Added by LM Studio CLI (lms)
 export PATH="$PATH:/Users/thomasfan/.cache/lm-studio/bin"
 # End of LM Studio CLI section
 export PATH="/Users/thomasfan/.pixi/bin:$PATH"
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+export PATH="$(brew --prefix gnu-sed)/libexec/gnubin:$PATH"

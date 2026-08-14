@@ -68,3 +68,6 @@ plot_bench_*
 
 .python-version
 tjpf-*
+.venv*
+
+**/.claude/settings.local.json
