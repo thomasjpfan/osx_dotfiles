@@ -175,4 +175,5 @@ export PATH="$PATH:/Users/thomasfan/.cache/lm-studio/bin"
 # End of LM Studio CLI section
 export PATH="/Users/thomasfan/.pixi/bin:$PATH"
 export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
-export PATH="$(brew --prefix gnu-sed)/libexec/gnubin:$PATH"
+
+[ -x "$(command -v /opt/homebrew/bin/brew)" ] && export PATH="$(brew --prefix gnu-sed)/libexec/gnubin:$PATH"
